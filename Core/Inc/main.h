@@ -31,7 +31,6 @@ extern "C" {
 
 #include "stm32g4xx_ll_adc.h"
 #include "stm32g4xx_ll_dma.h"
-#include "stm32g4xx_ll_i2c.h"
 #include "stm32g4xx_ll_lptim.h"
 #include "stm32g4xx_ll_rcc.h"
 #include "stm32g4xx_ll_bus.h"
@@ -73,14 +72,18 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LED_TEXT_Pin LL_GPIO_PIN_4
-#define LED_TEXT_GPIO_Port GPIOA
+#define POWER_EN_Pin LL_GPIO_PIN_4
+#define POWER_EN_GPIO_Port GPIOA
 #define SPI1_CS_Pin LL_GPIO_PIN_4
 #define SPI1_CS_GPIO_Port GPIOC
-#define I2C_SDA_Pin LL_GPIO_PIN_14
-#define I2C_SDA_GPIO_Port GPIOB
-#define I2C_SCL_Pin LL_GPIO_PIN_15
-#define I2C_SCL_GPIO_Port GPIOB
+#define POWER_UEN_Pin LL_GPIO_PIN_11
+#define POWER_UEN_GPIO_Port GPIOB
+#define DC_Pin LL_GPIO_PIN_3
+#define DC_GPIO_Port GPIOB
+#define RES_Pin LL_GPIO_PIN_4
+#define RES_GPIO_Port GPIOB
+#define SPI3_CS_Pin LL_GPIO_PIN_6
+#define SPI3_CS_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

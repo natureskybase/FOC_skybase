@@ -252,7 +252,6 @@ void TIM1_UP_TIM16_IRQHandler(void)
 /**
   * @brief This function handles TIM3 global interrupt.
   */
-uint32_t start_count =10000;
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
