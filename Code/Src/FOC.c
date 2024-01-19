@@ -1,14 +1,20 @@
-#include "FOC.h"
+#include "foc.h"
 #include "AS5600.h"
 #include "dma.h"
 #include "tim.h"
 
+
+
 MOTOR FOC_MOTOR__;
 MOTOR* FOC_MOTOR=&FOC_MOTOR__;
 
+MOTOR_PID foc_pid_iq__;
+MOTOR_PID* foc_pid_iq=&foc_pid_iq__;
+MOTOR_PID foc_pid_id__;
+MOTOR_PID* foc_pid_id=&foc_pid_id__;
+
 float DA,DB,DC;
 float d1,d2,d3,d4,d5,d6,d7;
-
 
 uint16_t sine_array[200] = {
   0, 79, 158, 237, 316, 395, 473, 552, 631, 710,
@@ -80,21 +86,24 @@ void Theta_get(MOTOR* motor)
 
 }
 
-uint16_t U_bias[3];
-#define bias_get(n) ADC_ConvertedValue[n]-AdcVoltageOffset
+float U_bias[3];
+#define bias_get(n)         1.0*(ADC_ConvertedValue[n]-AdcVoltageOffset)\
+                            *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify;
+#define current_cal(n)      (1.0*(ADC_ConvertedValue[n]-AdcVoltageOffset)\
+                            *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify)-U_bias[n];
 void Current_get_init()
 {
-    uint16_t U_bias_array[300]={0};
-    uint16_t ans_a=0,ans_b=0,ans_c=0;
-    for(uint8_t i=0;i<30;i++)
+    float U_bias_array[30]={0};
+    float ans_a=0,ans_b=0,ans_c=0;
+    for(uint16_t i=0;i<30;i++)
     {
-        LL_mDelay(2);
-        if(i<100)
+        LL_mDelay(1);
+        if(i<10)
         {
             U_bias_array[i]=bias_get(0);
             ans_a+=U_bias_array[i];
         }
-        else if(i>=100 && i<200)
+        else if(i>=10 && i<20)
         {
             U_bias_array[i]=bias_get(1);
             ans_b+=U_bias_array[i];
@@ -105,39 +114,28 @@ void Current_get_init()
             ans_c+=U_bias_array[i];
         }
     }
-    U_bias[0]=ans_a/100;
-    U_bias[1]=ans_b/100;
-    U_bias[2]=ans_c/100;
+    U_bias[0]=ans_a/10;
+    U_bias[1]=ans_b/10;
+    U_bias[2]=ans_c/10;
 }
 
-#define current_cal(n)      1.0*(ADC_ConvertedValue[n]-AdcVoltageOffset-U_bias[n])\
-                            *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify;
+uint8_t current_judge =0x00;
 void Current_get(MOTOR* motor)
 {
     static float V_A_last=0,V_B_last=0,V_C_last=0;
     static float V_A_last_last=0,V_B_last_last=0,V_C_last_last=0;
     float V_A, V_B, V_C;
-    uint16_t _TIM_CCR1 = TIM1->CCR1,_TIM_CCR2 = TIM1->CCR2,_TIM_CCR3 = TIM1->CCR3;
-    uint16_t _TIM_CNT = TIM1->CNT;
-    uint8_t current_judge =0x00;
-    // MOTOR* info_motor = (struct MOTOR*)motor;
+    uint16_t _TIM_CCR1 = DA*DutyAmplitude, _TIM_CCR2 = DB*DutyAmplitude, _TIM_CCR3 = DC*DutyAmplitude;
+    uint16_t _TIM_CNT = LL_TIM_GetCounter(TIM1);
+    current_judge =0x00;
     
-    // for(uint8_t i=0;i<3;i++)
-    // {
-    //     motor->voltage_info[i] = 1.0*(ADC_ConvertedValue[i]-AdcVoltageOffset)
-    //     *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify;
-    // }
-    // V_A= 1.0*(ADC_ConvertedValue[0]-AdcVoltageOffset-I_A_bias)
-    //     *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify;
-    // V_B = 1.0*(ADC_ConvertedValue[1]-AdcVoltageOffset-I_B_bias)
-    //     *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify;
-    // V_C = 1.0*(ADC_ConvertedValue[2]-AdcVoltageOffset-I_C_bias)
-    //     *StanderedVoltage/AdcCycle/SampleResistor/OperationalAmplify;
-    
-    current_judge |= (_TIM_CNT>=_TIM_CCR1)<<2;
-    current_judge |= (_TIM_CNT>=_TIM_CCR2)<<1;
+    current_judge |= ((_TIM_CNT>=_TIM_CCR1)<<2);
+    current_judge |= ((_TIM_CNT>=_TIM_CCR2)<<1);
     current_judge |= (_TIM_CNT>=_TIM_CCR3);
     
+    uint8_t sector =motor->foc_sector;
+
+
     // 0110
     if(current_judge == 0x06)
     {
@@ -171,47 +169,40 @@ void Current_get(MOTOR* motor)
         return;
     }
 
-    //0.5uq - 0.5阈值
-    if(fabsf(V_A - V_A_last)-fabsf(V_A_last-V_A_last_last)>=0.5)V_A=V_A_last;
-    if(fabsf(V_B - V_B_last)-fabsf(V_B_last-V_B_last_last)>=0.5)V_B=V_B_last;
-    if(fabsf(V_C - V_C_last)-fabsf(V_C_last-V_C_last_last)>=0.5)V_C=V_C_last;
-    V_A = V_A*0.6+V_A_last*0.4;
-    V_B = V_B*0.6+V_B_last*0.4;
-    V_C = V_C*0.6+V_C_last*0.4;
+    V_C = -V_A-V_B;
 
+    // // 0.5uq - 0.5阈值
+    // if(fabsf(V_A - V_A_last)-fabsf(V_A_last-V_A_last_last)>=1.8)V_A=V_A_last;
+    // if(fabsf(V_B - V_B_last)-fabsf(V_B_last-V_B_last_last)>=1.8)V_B=V_B_last;
+    // if(fabsf(V_C - V_C_last)-fabsf(V_C_last-V_C_last_last)>=1.8)V_C=V_C_last;
+    
+    // V_A = V_A*0.6+V_A_last*0.4;
+    // V_B = V_B*0.6+V_B_last*0.4;
+    // V_C = V_C*0.6+V_C_last*0.4;
+
+    // V_A_last_last = V_A_last; V_A_last = V_A;
+    // V_B_last_last = V_B_last; V_B_last = V_B;
+    // V_C_last_last = V_C_last; V_C_last = V_C;
+    
     motor->voltage_info[0] = V_A;
-    motor->voltage_info[1] = V_B;
-    motor->voltage_info[2] = V_C;
-
-    V_A_last_last = V_A_last; V_A_last = V_A;
-    V_B_last_last = V_B_last; V_B_last = V_B;
-    V_C_last_last = V_C_last; V_C_last = V_C;
-    
+    motor->voltage_info[1] = V_C;
+    motor->voltage_info[2] = V_B;
 }
 
-void Velocity_pid(MOTOR* motor)
+void current_reconstitution(MOTOR* motor)
 {
-    
-    motor->voltage_d = 0;
-    motor->voltage_q = 6;
-    // motor->voltage_d = 6;
-    // motor->voltage_q = 0;
-    
-    // motor->machanical_theta=0;
-    // ParkAnti_transfrom(motor);
-    // ClarkAnti_transfrom(motor);
-    // Svpwm(motor);
-
+    uint8_t sector = motor->foc_sector;
+    // if(sector == )
 }
+
 
 void FOC_init(MOTOR* motor)
 {
     memset(motor, 0, sizeof(struct MOTOR));
-    
-    // motor->theta_get = Theta_get;
-    // motor->current_get = Current_get;
-    // motor->velocity_pid = Velocity_pid;
 
+    motor->spin_direction = 1;//默认初始化为正方向
+    PID_Init(foc_pid_iq,0.001, 0, 0, 0.1, 1.5);
+    PID_Init(foc_pid_iq,0.001, 0, 0, 0.1, 1.5);
     /*PWM波初始化*/
     Pwm_init();
 
@@ -223,14 +214,19 @@ void Clarke_transfrom(MOTOR* motor)
 {
     motor->current_alpha = 1.0*2/3*(motor->voltage_info[0] - motor->voltage_info[1]/2 -motor->voltage_info[2]/2);
     motor->current_beta = 1.0*one_sqr3*(motor->voltage_info[1] - motor->voltage_info[2]);
-
+    
 }
 
 void Park_transfrom(MOTOR* motor)
 {
-    motor->current_d = motor->current_alpha*cos(motor->theta) + motor->current_beta*sin(motor->theta);
-    motor->current_q = motor->current_beta*cos(motor->theta) - motor->current_alpha*sin(motor->theta);
-
+    if(motor->spin_direction==2){
+    motor->current_d = motor->current_alpha*_cos(motor->theta) + motor->current_beta*_sin(motor->theta);
+    motor->current_q = motor->current_beta*_cos(motor->theta) - motor->current_alpha*_sin(motor->theta);
+    }
+    else if(motor->spin_direction==1){
+    motor->current_d = motor->current_beta*_cos(motor->theta) + motor->current_alpha*_sin(motor->theta);
+    motor->current_q = motor->current_alpha*_cos(motor->theta) - motor->current_beta*_sin(motor->theta);
+    }
 }
 
 
@@ -271,6 +267,26 @@ void Pwm_change(float A, float B, float C)
     TIM1->CCR1 = A * DutyAmplitude;
     TIM1->CCR2 = B * DutyAmplitude;
     TIM1->CCR3 = C * DutyAmplitude;
+}
+
+
+void Velocity_pid(MOTOR* motor, float q)
+{
+
+    Clarke_transfrom(motor);
+    Park_transfrom(motor);
+
+    float iq=motor->current_q;
+    float id=motor->current_d;
+
+    // PID_calc(foc_pid_iq, iq, q);
+    PID_calc(foc_pid_id, id, 0);
+    iq += foc_pid_iq->out;
+    id += foc_pid_id->out;
+
+    Svpwm(FOC_MOTOR,iq,id,FOC_MOTOR->theta);
+    Pwm_change(DA,DB,DC);
+
 }
 
 void Svpwm(MOTOR*motor, float Uq, float Ud, float angle_el)
@@ -558,6 +574,7 @@ void Svpwm(MOTOR*motor, float Uq, float Ud, float angle_el)
 }
 
 
+// simple_Foc
 void Svpwm_sensor(float Uref, float angle_el)
 {
   

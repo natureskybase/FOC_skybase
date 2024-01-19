@@ -395,19 +395,9 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
-              <FileName>AS5600.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Code\Src\AS5600.c</FilePath>
-            </File>
-            <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Code\Src\delay.c</FilePath>
-            </File>
-            <File>
-              <FileName>FOC.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Code\Src\FOC.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -882,6 +872,26 @@
               <FileName>usbd_cdc.c</FileName>
               <FileType>1</FileType>
               <FilePath>C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>code</GroupName>
+          <Files>
+            <File>
+              <FileName>AS5600.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Code\Src\AS5600.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Code\Src\pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>foc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Code\Src\foc.c</FilePath>
             </File>
           </Files>
         </Group>

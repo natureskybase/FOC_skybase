@@ -62,4 +62,4 @@ foc_skybase/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h \
   ..\Code\Inc\delay.h ..\Code\Inc\FOC.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h ..\Code\Inc\pid.h

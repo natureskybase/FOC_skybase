@@ -30,7 +30,7 @@
 /*----------------------------------------------------------------------------*/
 
 /* USER CODE BEGIN 1 */
-uint16_t ADC_ConvertedValue[3];
+uint16_t ADC_ConvertedValue[12];
 /* USER CODE END 1 */
 
 /**

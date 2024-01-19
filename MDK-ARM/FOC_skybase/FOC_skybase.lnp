@@ -1,8 +1,6 @@
 --cpu=Cortex-M4.fp.sp
 "foc_skybase\startup_stm32g431xx.o"
-"foc_skybase\as5600.o"
 "foc_skybase\delay.o"
-"foc_skybase\foc.o"
 "foc_skybase\main.o"
 "foc_skybase\gpio.o"
 "foc_skybase\adc.o"
@@ -52,6 +50,9 @@
 "foc_skybase\usbd_ctlreq.o"
 "foc_skybase\usbd_ioreq.o"
 "foc_skybase\usbd_cdc.o"
+"foc_skybase\as5600.o"
+"foc_skybase\pid.o"
+"foc_skybase\foc.o"
 --strict --scatter "FOC_skybase\FOC_skybase.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

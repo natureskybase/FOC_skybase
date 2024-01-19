@@ -33,6 +33,7 @@
 #include "usbd_cdc_if.h"
 #include "delay.h"
 #include "FOC.h"
+#include "pid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -124,7 +125,7 @@ int main(void)
 
 	// ADC_DMA_Start();
   LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�???
-	LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,3);
+	LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,12);
   LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);
 	LL_ADC_REG_SetDMATransfer(ADC1,LL_ADC_REG_DMA_TRANSFER_UNLIMITED);
 
@@ -135,16 +136,11 @@ int main(void)
 	LL_ADC_REG_StartConversion(ADC1);
 
 
-  struct 
-  {
-    float x[7];
-    unsigned char tail[4];
-  } x={.tail = {0x00, 0x00, 0x80, 0x7f}};
 
   FOC_init(FOC_MOTOR); 
   Current_get_init();
 
-
+  LL_mDelay(100);
   /*使能TIM1时钟，使其可以进入中断中*/
 	LL_TIM_ClearFlag_UPDATE(TIM1);
   LL_TIM_EnableIT_UPDATE(TIM1); //TIM1更新使能
@@ -154,6 +150,11 @@ int main(void)
 	LL_TIM_EnableCounter(TIM3);   //TIM3计数使能
   LL_TIM_EnableIT_UPDATE(TIM3); //TIM3更新使能
 
+  // struct 
+  // {
+  //   float x[7];
+  //   unsigned char tail[4];
+  // } x={.tail = {0x00, 0x00, 0x80, 0x7f}};
 
   /* USER CODE END 2 */
 
@@ -179,7 +180,9 @@ int main(void)
     // CDC_Transmit_FS(&x, sizeof(x));
     // USBVcom_printf("%f, %f, %f,%f,%f,%d,%d\r\n", DA, DB, DC,FOC_MOTOR->theta,FOC_MOTOR->machanical_theta,FOC_MOTOR->angle_raw,FOC_MOTOR->foc_sector);
 		// USBVcom_printf("%f, %f, %f,%f,%f,%f\r\n", DA, DB, DC,FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
-    USBVcom_printf("%f, %f, %f\r\n", FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
+    // USBVcom_printf("%f, %f, %f\r\n", FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
+    // USBVcom_printf("%d, %d, %d\r\n", ADC_ConvertedValue[0], ADC_ConvertedValue[1], ADC_ConvertedValue[2]);
+    // USBVcom_printf("%f, %f\r\n", FOC_MOTOR->current_q, FOC_MOTOR->current_d);
         
     /* USER CODE END WHILE */
 

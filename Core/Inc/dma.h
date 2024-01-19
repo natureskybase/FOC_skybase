@@ -41,7 +41,7 @@ extern "C" {
 void MX_DMA_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-extern uint16_t ADC_ConvertedValue[3];
+extern uint16_t ADC_ConvertedValue[12];
 void ADC_DMA_Start(void);
 /* USER CODE END Prototypes */
 

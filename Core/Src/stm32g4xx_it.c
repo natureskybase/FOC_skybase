@@ -23,6 +23,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "FOC.h"
+#include "dma.h"
+#include "usbd_cdc_if.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -250,17 +252,39 @@ void TIM1_UP_TIM16_IRQHandler(void)
 /**
   * @brief This function handles TIM3 global interrupt.
   */
+uint32_t start_count =10000;
 void TIM3_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM3_IRQn 0 */
   if(LL_TIM_IsActiveFlag_UPDATE(TIM3) == SET)
   {
     LL_TIM_ClearFlag_UPDATE(TIM3);
-
-    Theta_get(FOC_MOTOR);
-    Svpwm(FOC_MOTOR,0.5,0,FOC_MOTOR->theta);
-    Pwm_change(DA,DB,DC);
     
+    Theta_get(FOC_MOTOR);
+
+    Svpwm(FOC_MOTOR,-0.5,0,FOC_MOTOR->theta);
+    Pwm_change(DA,DB,DC);
+    Clarke_transfrom(FOC_MOTOR);
+    Park_transfrom(FOC_MOTOR);
+    
+    // Velocity_pid(FOC_MOTOR,-0.1);
+
+    // USBVcom_printf("%f, %f, %f\r\n", DA, DB, DC);
+    // USBVcom_printf("%f, %f, %f\r\n", FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
+    // USBVcom_printf("%d, %d, %d\r\n", ADC_ConvertedValue[0], ADC_ConvertedValue[1], ADC_ConvertedValue[2]);
+    USBVcom_printf("%f, %f\r\n", FOC_MOTOR->current_q, FOC_MOTOR->current_d);
+
+    // USBVcom_printf("%d\r\n",current_judge);
+    // struct 
+    // {
+    // float x[7];
+    // unsigned char tail[4];
+    // } x={.tail = {0x00, 0x00, 0x80, 0x7f}};
+
+    // x.x[0]=FOC_MOTOR->voltage_info[0];
+    // x.x[1]=FOC_MOTOR->voltage_info[1];
+    // x.x[2]=FOC_MOTOR->voltage_info[2];
+    // CDC_Transmit_FS(&x, sizeof(x));
   }
   /* USER CODE END TIM3_IRQn 0 */
   /* USER CODE BEGIN TIM3_IRQn 1 */

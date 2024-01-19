@@ -36,6 +36,7 @@ foc_skybase/pid.o: ..\Code\Src\pid.c ..\Code\Inc\pid.h ..\Core\Inc\tim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h \
@@ -45,5 +46,6 @@ foc_skybase/pid.o: ..\Code\Src\pid.c ..\Code\Inc\pid.h ..\Core\Inc\tim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h

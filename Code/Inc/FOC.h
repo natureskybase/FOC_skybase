@@ -3,6 +3,7 @@
 #include "main.h"
 #include "math.h"
 #include "string.h"
+#include "pid.h"
 
 #define _PI_2  1.57079632679
 #define _PI    3.14159265359
@@ -23,22 +24,23 @@
 #define AdcVoltageOffset    2048    //AdcCycle/2
 #define SampleResistor      0.01    //单位是欧姆
 #define OperationalAmplify  20      //运放放大倍率       
-#define I_A_bias    -39
-#define I_B_bias    -42
-#define I_C_bias    35
+
 
 #define Angle_read()            AS_angle_read_filter()
 #define PoleNum                 7       //极对数
 #define MechanicalAngleOffset   312     //单位/度 ，在多级对的情况下，存在多个零位偏置(多个电角度零位)，取其中一个就行  180
 #define EncoderCycle            4096    //2^12
 
-extern uint16_t U_bias[3];
+
 
 typedef void (*info_get) (void*);
 typedef void (*PID) (void*);
 
 typedef struct MOTOR
 {
+    uint8_t ID;
+    uint8_t spin_direction; //0停转 1正转 2反转
+
     float voltage_info[3];
     float voltage_control[3];
     float current_q;
@@ -53,21 +55,16 @@ typedef struct MOTOR
     uint16_t angle_raw;
     float machanical_theta;
     float theta;
-    // uint16_t target_angle;
-
-    // info_get current_get;
-    // // info_get theta_get;
-    // void (*theta_get)(struct MOTOR* motor);
-
-    // PID velocity_pid;
 
     uint8_t foc_sector;
 
 }MOTOR;
 
-
+extern float U_bias[3];
 extern MOTOR* FOC_MOTOR;
 extern float DA,DB,DC;
+extern uint8_t current_judge;
+
 
 float _sin ( float a );
 float _cos ( float a );
@@ -82,7 +79,7 @@ void Park_transfrom(MOTOR* motor);
 void ParkAnti_transfrom(MOTOR* motor,float Uq,float Ud, float theta);
 void Svpwm(MOTOR*motor, float Uq, float Ud, float angle_el);
 void Svpwm_sensor(float Uref, float angle_el);
-void Velocity_pid(MOTOR* motor);
+void Velocity_pid(MOTOR* motor, float q);
 
 void Pwm_init(void);
 void Pwm_change(float A, float B, float C);

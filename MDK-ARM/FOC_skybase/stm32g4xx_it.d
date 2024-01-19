@@ -50,4 +50,13 @@ foc_skybase/stm32g4xx_it.o: ..\Core\Src\stm32g4xx_it.c ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h \
   ..\Core\Inc\stm32g4xx_it.h ..\Code\Inc\FOC.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Code\Inc\pid.h \
+  ..\Core\Inc\dma.h ..\USB_Device\App\usbd_cdc_if.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h \
+  ..\USB_Device\Target\usbd_conf.h \
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h

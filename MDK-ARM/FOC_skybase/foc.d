@@ -1,4 +1,4 @@
-foc_skybase/foc.o: ..\Code\Src\FOC.c ..\Code\Inc\FOC.h ..\Core\Inc\main.h \
+foc_skybase/foc.o: ..\Code\Src\foc.c ..\Code\Inc\foc.h ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Core\Inc\stm32g4xx_hal_conf.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
@@ -49,5 +49,6 @@ foc_skybase/foc.o: ..\Code\Src\FOC.c ..\Code\Inc\FOC.h ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Code\Inc\AS5600.h \
-  ..\Core\Inc\gpio.h ..\Core\Inc\dma.h ..\Core\Inc\tim.h
+  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Code\Inc\pid.h \
+  ..\Code\Inc\AS5600.h ..\Core\Inc\gpio.h ..\Core\Inc\dma.h \
+  ..\Core\Inc\tim.h

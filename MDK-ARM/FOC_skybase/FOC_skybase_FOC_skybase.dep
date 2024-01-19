@@ -1,71 +1,6 @@
 Dependencies for Project 'FOC_skybase', Target 'FOC_skybase': (DO NOT MODIFY !)
 CompilerVersion: 6190000::V6.19::ARMCLANG
 F (startup_stm32g431xx.s)(0x65868866)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32G431xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o foc_skybase/startup_stm32g431xx.o)
-F (..\Code\Src\AS5600.c)(0x6571DB35)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/as5600.o -MD)
-I (..\Code\Inc\AS5600.h)(0x6585A3DD)
-I (..\Core\Inc\gpio.h)(0x656E3BC6)
-I (..\Core\Inc\main.h)(0x6585A4C3)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
-I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x6585A3CC)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x6561DF1E)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_fdcan.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x656F4CD5)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_crs.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
-I (..\Code\Inc\delay.h)(0x655482E4)
-I (..\USB_Device\App\usbd_cdc_if.h)(0x656F4ED2)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h)(0x6561DF22)
-I (..\USB_Device\Target\usbd_conf.h)(0x656E3BC9)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63884908)
-I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 F (..\Code\Src\delay.c)(0x655F374A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/delay.o -MD)
 I (..\Code\Inc\delay.h)(0x655482E4)
 I (..\Core\Inc\main.h)(0x6585A4C3)
@@ -116,10 +51,9 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
-F (..\Code\Src\FOC.c)(0x6586A54F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/foc.o -MD)
-I (..\Code\Inc\FOC.h)(0x65868E64)
+F (../Core/Src/main.c)(0x65AA577B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/main.o -MD)
 I (..\Core\Inc\main.h)(0x6585A4C3)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
@@ -168,67 +102,10 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
-I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
-I (..\Code\Inc\AS5600.h)(0x6585A3DD)
-I (..\Core\Inc\gpio.h)(0x656E3BC6)
-I (..\Core\Inc\dma.h)(0x65700F9D)
-I (..\Core\Inc\tim.h)(0x656E3BC9)
-F (../Core/Src/main.c)(0x658693C6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/main.o -MD)
-I (..\Core\Inc\main.h)(0x6585A4C3)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
-I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x6585A3CC)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
-I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x6561DF1E)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6561DF22)
-I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_fdcan.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x656F4CD5)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_crs.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 I (..\Core\Inc\adc.h)(0x656E3BC8)
-I (..\Core\Inc\dma.h)(0x65700F9D)
+I (..\Core\Inc\dma.h)(0x65A62FDD)
 I (..\Core\Inc\fdcan.h)(0x656E3BC9)
 I (..\Core\Inc\i2c.h)(0x6585A4C1)
 I (..\Core\Inc\lptim.h)(0x656E3BC9)
@@ -247,8 +124,9 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h)(0x6561DF22)
 I (..\Code\Inc\delay.h)(0x655482E4)
-I (..\Code\Inc\FOC.h)(0x65868E64)
+I (..\Code\Inc\FOC.h)(0x65AA5857)
 I (D:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
+I (..\Code\Inc\pid.h)(0x65A92BE0)
 F (../Core/Src/gpio.c)(0x6585A49F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/gpio.o -MD)
 I (..\Core\Inc\gpio.h)(0x656E3BC6)
 I (..\Core\Inc\main.h)(0x6585A4C3)
@@ -299,7 +177,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 F (../Core/Src/adc.c)(0x65701A71)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/adc.o -MD)
 I (..\Core\Inc\adc.h)(0x656E3BC8)
@@ -351,10 +229,10 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
-F (../Core/Src/dma.c)(0x6585A4A2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/dma.o -MD)
-I (..\Core\Inc\dma.h)(0x65700F9D)
+F (../Core/Src/dma.c)(0x65A62FCB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/dma.o -MD)
+I (..\Core\Inc\dma.h)(0x65A62FDD)
 I (..\Core\Inc\main.h)(0x6585A4C3)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
@@ -403,7 +281,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 F (../Core/Src/fdcan.c)(0x656E3BC9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/fdcan.o -MD)
 I (..\Core\Inc\fdcan.h)(0x656E3BC9)
@@ -455,7 +333,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 F (../Core/Src/i2c.c)(0x65868861)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/i2c.o -MD)
 I (..\Core\Inc\i2c.h)(0x6585A4C1)
@@ -507,7 +385,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 F (../Core/Src/lptim.c)(0x656E3BC9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/lptim.o -MD)
 I (..\Core\Inc\lptim.h)(0x656E3BC9)
@@ -559,7 +437,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 F (../Core/Src/spi.c)(0x6585A4C1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/spi.o -MD)
 I (..\Core\Inc\spi.h)(0x6585A4C1)
@@ -611,9 +489,9 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
-F (../Core/Src/tim.c)(0x658691B8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/tim.o -MD)
+F (../Core/Src/tim.c)(0x65A9359C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/tim.o -MD)
 I (..\Core\Inc\tim.h)(0x656E3BC9)
 I (..\Core\Inc\main.h)(0x6585A4C3)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
@@ -663,9 +541,9 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
-F (../Core/Src/stm32g4xx_it.c)(0x6586A084)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/stm32g4xx_it.o -MD)
+F (../Core/Src/stm32g4xx_it.c)(0x65AA5EC0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/stm32g4xx_it.o -MD)
 I (..\Core\Inc\main.h)(0x6585A4C3)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
 I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
@@ -714,12 +592,23 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 I (..\Core\Inc\stm32g4xx_it.h)(0x6585A4A4)
-I (..\Code\Inc\FOC.h)(0x65868E64)
+I (..\Code\Inc\FOC.h)(0x65AA5857)
 I (D:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
 I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
+I (..\Code\Inc\pid.h)(0x65A92BE0)
+I (..\Core\Inc\dma.h)(0x65A62FDD)
+I (..\USB_Device\App\usbd_cdc_if.h)(0x656F4ED2)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h)(0x6561DF22)
+I (..\USB_Device\Target\usbd_conf.h)(0x656E3BC9)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h)(0x6561DF22)
 F (../Core/Src/stm32g4xx_hal_msp.c)(0x656E3BCA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/stm32g4xx_hal_msp.o -MD)
 I (..\Core\Inc\main.h)(0x6585A4C3)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
@@ -769,7 +658,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
 F (../USB_Device/Target/usbd_conf.c)(0x656F4CF0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/usbd_conf.o -MD)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
@@ -1923,7 +1812,7 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
 F (C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_tim.c)(0x6561DF22)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/stm32g4xx_ll_tim.o -MD)
-I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x658670BE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x6585A3CC)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h)(0x6561DF22)
@@ -2161,3 +2050,180 @@ I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h)(0x6561DF22)
 I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h)(0x6561DF22)
+F (..\Code\Src\AS5600.c)(0x6571DB35)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/as5600.o -MD)
+I (..\Code\Inc\AS5600.h)(0x6585A3DD)
+I (..\Core\Inc\gpio.h)(0x656E3BC6)
+I (..\Core\Inc\main.h)(0x6585A4C3)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
+I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x6585A3CC)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x6561DF1E)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_fdcan.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x656F4CD5)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_crs.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
+I (..\Code\Inc\delay.h)(0x655482E4)
+I (..\USB_Device\App\usbd_cdc_if.h)(0x656F4ED2)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Class\CDC\Inc\usbd_cdc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ioreq.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_def.h)(0x6561DF22)
+I (..\USB_Device\Target\usbd_conf.h)(0x656E3BC9)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_ctlreq.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
+F (..\Code\Src\pid.c)(0x65AA540D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/pid.o -MD)
+I (..\Code\Inc\pid.h)(0x65A92BE0)
+I (..\Core\Inc\tim.h)(0x656E3BC9)
+I (..\Core\Inc\main.h)(0x6585A4C3)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
+I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x6585A3CC)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x6561DF1E)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_fdcan.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x656F4CD5)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_crs.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
+F (..\Code\Src\foc.c)(0x65AA5869)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../USB_Device/App -I ../USB_Device/Target -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Device/ST/STM32G4xx/Include -I C:/Users/10548/STM32Cube/Repository/STM32Cube_FW_G4_V1.5.1/Drivers/CMSIS/Include -I ../Code/Inc-I./RTE/_FOC_skybase-ID:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include-ID:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_skybase/foc.o -MD)
+I (..\Code\Inc\foc.h)(0x65AA5857)
+I (..\Core\Inc\main.h)(0x6585A4C3)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h)(0x6561DF22)
+I (..\Core\Inc\stm32g4xx_hal_conf.h)(0x6585A4C3)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h)(0x6561DF1E)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h)(0x6585A3CC)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h)(0x6561DF1E)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x63884908)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_dma_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_cortex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_exti.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_fdcan.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_flash_ramfunc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h)(0x656F4CD5)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_crs.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h)(0x6561DF22)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h)(0x65A63EBE)
+I (C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h)(0x6561DF22)
+I (D:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x63884908)
+I (D:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x63884908)
+I (..\Code\Inc\pid.h)(0x65A92BE0)
+I (..\Code\Inc\AS5600.h)(0x6585A3DD)
+I (..\Core\Inc\gpio.h)(0x656E3BC6)
+I (..\Core\Inc\dma.h)(0x65A62FDD)
+I (..\Core\Inc\tim.h)(0x656E3BC9)
