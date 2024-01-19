@@ -21,7 +21,6 @@
 #include "adc.h"
 #include "dma.h"
 #include "fdcan.h"
-#include "i2c.h"
 #include "lptim.h"
 #include "spi.h"
 #include "tim.h"
@@ -115,16 +114,16 @@ int main(void)
   MX_TIM1_Init();
   MX_USB_Device_Init();
   MX_TIM3_Init();
-  MX_I2C1_Init();
   MX_SPI1_Init();
   MX_SPI3_Init();
+  MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
 
   delay_init(170);
 
 
 	// ADC_DMA_Start();
-  LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�???
+  LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�????
 	LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,12);
   LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);
 	LL_ADC_REG_SetDMATransfer(ADC1,LL_ADC_REG_DMA_TRANSFER_UNLIMITED);
