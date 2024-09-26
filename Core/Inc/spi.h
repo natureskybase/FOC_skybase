@@ -40,7 +40,8 @@ void MX_SPI1_Init(void);
 void MX_SPI3_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+extern uint16_t aRxBuffer[10];
+extern uint16_t aTxBuffer;
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

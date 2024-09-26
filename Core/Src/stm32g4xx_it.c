@@ -22,9 +22,11 @@
 #include "stm32g4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "FOC.h"
 #include "dma.h"
 #include "usbd_cdc_if.h"
+#include "spi.h"
+#include "FOC.h"
+#include "as5047.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -259,19 +261,24 @@ void TIM3_IRQHandler(void)
   {
     LL_TIM_ClearFlag_UPDATE(TIM3);
     
-    Theta_get(FOC_MOTOR);
+    // Theta_get(FOC_MOTOR);
 
-    Svpwm(FOC_MOTOR,-0.5,0,FOC_MOTOR->theta);
-    Pwm_change(DA,DB,DC);
-    Clarke_transfrom(FOC_MOTOR);
-    Park_transfrom(FOC_MOTOR);
+    // Svpwm(FOC_MOTOR,1,0,FOC_MOTOR->theta);
+    // Svpwm_sensor(1,FOC_MOTOR->theta);
+    // Pwm_change(DA,DB,DC);
+    // Clarke_transfrom(FOC_MOTOR);
+    // Park_transfrom(FOC_MOTOR);
+    // Svpwm(FOC_MOTOR,1,0,4.71);
+    // Svpwm(FOC_MOTOR,0,1,0);
+    // Pwm_change(DA,DB,DC);
     
     // Velocity_pid(FOC_MOTOR,-0.1);
 
     // USBVcom_printf("%f, %f, %f\r\n", DA, DB, DC);
     // USBVcom_printf("%f, %f, %f\r\n", FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
     // USBVcom_printf("%d, %d, %d\r\n", ADC_ConvertedValue[0], ADC_ConvertedValue[1], ADC_ConvertedValue[2]);
-    USBVcom_printf("%f, %f\r\n", FOC_MOTOR->current_q, FOC_MOTOR->current_d);
+    // USBVcom_printf("%f, %f\r\n", FOC_MOTOR->current_q, FOC_MOTOR->current_d);
+    // USBVcom_printf("%f, %f, %d\r\n",FOC_MOTOR->theta,FOC_MOTOR->machanical_theta,FOC_MOTOR->angle_raw);
 
     // USBVcom_printf("%d\r\n",current_judge);
     // struct 
@@ -289,6 +296,19 @@ void TIM3_IRQHandler(void)
   /* USER CODE BEGIN TIM3_IRQn 1 */
 
   /* USER CODE END TIM3_IRQn 1 */
+}
+
+/**
+  * @brief This function handles SPI1 global interrupt.
+  */
+void SPI1_IRQHandler(void)
+{
+  /* USER CODE BEGIN SPI1_IRQn 0 */
+  
+  /* USER CODE END SPI1_IRQn 0 */
+  /* USER CODE BEGIN SPI1_IRQn 1 */
+
+  /* USER CODE END SPI1_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

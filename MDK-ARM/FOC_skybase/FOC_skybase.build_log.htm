@@ -3,55 +3,160 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.38.0.0
-Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: skybase skybase, skybase, LIC=9WSKC-7M6PF-FWU2N-YPJLV-1IVF0-TF5NT
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: skybase skybase, skybase, LIC=WHYH9-4V466-Y88FK-ZQKZ8-VXYR1-MPUP4
  
 Tool Versions:
-Toolchain:       MDK-ARM Plus  Version: 5.38.0.0
-Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
-C Compiler:      ArmClang.exe V6.19
-Assembler:       Armasm.exe V6.19
-Linker/Locator:  ArmLink.exe V6.19
-Library Manager: ArmAr.exe V6.19
-Hex Converter:   FromElf.exe V6.19
-CPU DLL:         SARMCM3.DLL V5.38.0.0
+Toolchain:       MDK-ARM Plus  Version: 5.39.0.0
+Toolchain Path:  C:\Program Files\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
 Dialog DLL:      DCM.DLL V1.17.5.0
-Target DLL:      CMSIS_AGDI.dll V1.33.15.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
 Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
-d:\important flies\Embedded_project\FOC_skybase\MDK-ARM\FOC_skybase.uvprojx
-Project File Date:  01/16/2024
+D:\Project\Embedded_project\Stm_pro\FOC_skybase\MDK-ARM\FOC_skybase.uvprojx
+Project File Date:  03/20/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.19', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V6.21', folder: 'C:\Program Files\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'FOC_skybase'
-"FOC_skybase\FOC_skybase.axf" - 0 Error(s), 0 Warning(s).
+compiling usbd_cdc_if.c...
+compiling usbd_conf.c...
+compiling usbd_desc.c...
+compiling fdcan.c...
+assembling startup_stm32g431xx.s...
+compiling gpio.c...
+compiling usb_device.c...
+compiling adc.c...
+compiling spi.c...
+compiling main.c...
+compiling dma.c...
+compiling tim.c...
+compiling stm32g4xx_it.c...
+compiling stm32g4xx_hal_msp.c...
+compiling lptim.c...
+compiling stm32g4xx_ll_rcc.c...
+compiling stm32g4xx_ll_exti.c...
+compiling stm32g4xx_ll_utils.c...
+compiling stm32g4xx_ll_gpio.c...
+compiling stm32g4xx_hal_pcd_ex.c...
+compiling stm32g4xx_hal_flash_ramfunc.c...
+compiling stm32g4xx_hal_gpio.c...
+compiling stm32g4xx_hal_pcd.c...
+compiling stm32g4xx_hal.c...
+compiling stm32g4xx_hal_flash.c...
+compiling stm32g4xx_hal_rcc.c...
+compiling stm32g4xx_hal_rcc_ex.c...
+compiling stm32g4xx_hal_flash_ex.c...
+compiling stm32g4xx_hal_exti.c...
+compiling stm32g4xx_ll_usb.c...
+compiling stm32g4xx_hal_dma.c...
+compiling stm32g4xx_hal_dma_ex.c...
+compiling stm32g4xx_hal_pwr.c...
+compiling stm32g4xx_hal_cortex.c...
+compiling stm32g4xx_hal_pwr_ex.c...
+compiling stm32g4xx_ll_adc.c...
+compiling stm32g4xx_ll_dma.c...
+compiling stm32g4xx_hal_tim_ex.c...
+compiling stm32g4xx_hal_tim.c...
+compiling stm32g4xx_ll_lptim.c...
+compiling stm32g4xx_ll_spi.c...
+compiling stm32g4xx_hal_fdcan.c...
+compiling system_stm32g4xx.c...
+compiling usbd_ioreq.c...
+compiling usbd_core.c...
+compiling usbd_ctlreq.c...
+compiling usbd_cdc.c...
+compiling stm32g4xx_ll_tim.c...
+compiling pid.c...
+../Code/Src/AS5600.c(285): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  285 |     x_12 = fabs(angle[0]-angle[1]);
+      |            ^
+../Code/Src/AS5600.c(285): note: use function 'abs' instead
+  285 |     x_12 = fabs(angle[0]-angle[1]);
+      |            ^~~~
+      |            abs
+../Code/Src/AS5600.c(286): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  286 |     x_13 = fabs(angle[0]-angle[2]);
+      |            ^
+../Code/Src/AS5600.c(286): note: use function 'abs' instead
+  286 |     x_13 = fabs(angle[0]-angle[2]);
+      |            ^~~~
+      |            abs
+../Code/Src/AS5600.c(287): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  287 |     x_23 = fabs(angle[1]-angle[2]);
+      |            ^
+../Code/Src/AS5600.c(287): note: use function 'abs' instead
+  287 |     x_23 = fabs(angle[1]-angle[2]);
+      |            ^~~~
+      |            abs
+../Code/Src/AS5600.c(289): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |         ^
+../Code/Src/AS5600.c(289): note: use function 'abs' instead
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |         ^~~~
+      |         abs
+../Code/Src/AS5600.c(289): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |                               ^
+../Code/Src/AS5600.c(289): note: use function 'abs' instead
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |                               ^~~~
+      |                               abs
+../Code/Src/AS5600.c(289): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |                                                                              ^
+../Code/Src/AS5600.c(289): note: use function 'abs' instead
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |                                                                              ^~~~
+      |                                                                              abs
+../Code/Src/AS5600.c(289): warning: using floating point absolute value function 'fabs' when argument is of integer type [-Wabsolute-value]
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |                                                         ^
+../Code/Src/AS5600.c(289): note: use function 'abs' instead
+  289 |     if((fabs(x_23-x_12)>=150&&fabs(x_23-x_12)<=3000) ||(fabs(x_12-x_13>=150&&fabs(x_13-x_12)<=3000)))
+      |                                                         ^~~~
+      |                                                         abs
+7 warnings generated.
+compiling AS5600.c...
+compiling as5047.c...
+compiling foc.c...
+linking...
+Program Size: Code=47582 RO-data=602 RW-data=796 ZI-data=6556  
+FromELF: creating hex file...
+"FOC_skybase\FOC_skybase.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
-                ARM.CMSIS.5.9.0
+                ARM::CMSIS@5.9.0
                 CMSIS (Common Microcontroller Software Interface Standard)
    * Component: CORE Version: 5.6.0
 
 Package Vendor: Keil
                 https://www.keil.com/pack/Keil.STM32G4xx_DFP.1.5.0.pack
-                Keil.STM32G4xx_DFP.1.5.0
+                Keil::STM32G4xx_DFP@1.5.0
                 STMicroelectronics STM32G4 Series Device Support, Drivers and Examples
 
 <h2>Collection of Component include folders:</h2>
   ./RTE/_FOC_skybase
-  D:/Keil_v5/ARM/Pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include
-  D:/Keil_v5/ARM/Pack/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
+  C:/Users/10548/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/10548/AppData/Local/Arm/Packs/Keil/STM32G4xx_DFP/1.5.0/Drivers/CMSIS/Device/ST/STM32G4xx/Include
 
 <h2>Collection of Component Files used:</h2>
 
-   * Component: ARM::CMSIS:CORE:5.6.0
+   * Component: ARM::CMSIS:CORE@5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:02
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

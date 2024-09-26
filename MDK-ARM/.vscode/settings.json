@@ -3,6 +3,7 @@
         "usbd_cdc_if.h": "c",
         "tim.h": "c",
         "dma.h": "c",
-        "adc.h": "c"
+        "adc.h": "c",
+        "as5047.h": "c"
     }
 }

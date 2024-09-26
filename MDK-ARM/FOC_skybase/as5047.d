@@ -1,5 +1,5 @@
-foc_skybase/stm32g4xx_hal_flash_ex.o: \
-  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Src\stm32g4xx_hal_flash_ex.c \
+foc_skybase/as5047.o: ..\Code\Src\as5047.c ..\Code\Inc\as5047.h \
+  ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
   ..\Core\Inc\stm32g4xx_hal_conf.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
@@ -32,4 +32,20 @@ foc_skybase/stm32g4xx_hal_flash_ex.o: \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_usb.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pcd_ex.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr.h \
-  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_pwr_ex.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_crs.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_system.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_exti.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_cortex.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_utils.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_pwr.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h \
+  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h \
+  ..\Core\Inc\spi.h ..\Code\Inc\delay.h

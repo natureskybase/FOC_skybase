@@ -26,10 +26,10 @@
 #define OperationalAmplify  20      //运放放大倍率       
 
 
-#define Angle_read()            AS_angle_read_filter()
-#define PoleNum                 7       //极对数
-#define MechanicalAngleOffset   312     //单位/度 ，在多级对的情况下，存在多个零位偏置(多个电角度零位)，取其中一个就行  180
-#define EncoderCycle            4096    //2^12
+#define Angle_read()            as5047_read_angle()
+#define PoleNum                 7        //极对数
+#define MechanicalAngleOffset   35    //单位/度 ，在多级对的情况下，存在多个零位偏置(多个电角度零位)，取其中一个就行  35
+#define EncoderCycle            8191    //2^14
 
 
 

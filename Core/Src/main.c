@@ -29,6 +29,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdio.h"
 #include "usbd_cdc_if.h"
 #include "delay.h"
 #include "FOC.h"
@@ -74,18 +75,18 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
-
-  // Reset USB CDC
+ 
+  // Reset USB CDC and stm32 wakeup
   LL_GPIO_InitTypeDef GPIO_InitStruct = {0};
   LL_AHB2_GRP1_EnableClock(LL_AHB2_GRP1_PERIPH_GPIOA);
-  GPIO_InitStruct.Pin = LL_GPIO_PIN_12;
+  GPIO_InitStruct.Pin = LL_GPIO_PIN_12|LL_GPIO_PIN_4;
   GPIO_InitStruct.Mode = LL_GPIO_MODE_OUTPUT;
   GPIO_InitStruct.Speed = LL_GPIO_SPEED_FREQ_LOW;
   GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
   GPIO_InitStruct.Pull = LL_GPIO_PULL_DOWN;
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
   LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_12);
+  LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);
 
   /* USER CODE END 1 */
 
@@ -120,14 +121,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   delay_init(170);
-
+  //stm32 wakeup
+  LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);
 
 	// ADC_DMA_Start();
-  LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�????
+  LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�??????????
 	LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,12);
   LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);
 	LL_ADC_REG_SetDMATransfer(ADC1,LL_ADC_REG_DMA_TRANSFER_UNLIMITED);
-
 	LL_ADC_StartCalibration(ADC1,LL_ADC_SINGLE_ENDED);
 	while (LL_ADC_IsCalibrationOnGoing(ADC1));   //等待校准完成
 	LL_ADC_Enable(ADC1);
@@ -135,6 +136,51 @@ int main(void)
 	LL_ADC_REG_StartConversion(ADC1);
 
 
+  // //spi_dma配置
+  // uint8_t ubNbDataToTransmit = sizeof(aTxBuffer);
+  //   // LL_DMA_ConfigTransfer(DMA1,
+  //   //                     LL_DMA_CHANNEL_3,
+  //   //                     LL_DMA_DIRECTION_MEMORY_TO_PERIPH | LL_DMA_PRIORITY_HIGH | LL_DMA_MODE_NORMAL |
+  //   //                     LL_DMA_PERIPH_NOINCREMENT | LL_DMA_MEMORY_INCREMENT |
+  //   //                     LL_DMA_PDATAALIGN_HALFWORD | LL_DMA_MDATAALIGN_HALFWORD);
+  // LL_DMA_ConfigAddresses(DMA1,
+  //                        LL_DMA_CHANNEL_3,
+  //                        (uint32_t)aTxBuffer, LL_SPI_DMA_GetRegAddr(SPI1),
+  //                        LL_DMA_GetDataTransferDirection(DMA1, LL_DMA_CHANNEL_3));
+  // LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_3, ubNbDataToTransmit);
+  // LL_DMA_SetPeriphRequest(DMA1, LL_DMA_CHANNEL_3, LL_DMAMUX_REQ_SPI1_TX);
+
+  // uint8_t ubNbDataToReceive = sizeof(aRxBuffer);
+  // //  LL_DMA_ConfigTransfer(DMA1,
+  // //                       LL_DMA_CHANNEL_2,
+  // //                       LL_DMA_DIRECTION_PERIPH_TO_MEMORY | LL_DMA_PRIORITY_HIGH | LL_DMA_MODE_NORMAL |
+  // //                       LL_DMA_PERIPH_NOINCREMENT | LL_DMA_MEMORY_INCREMENT |
+  // //                       LL_DMA_PDATAALIGN_HALFWORD | LL_DMA_MDATAALIGN_HALFWORD);
+  // LL_DMA_ConfigAddresses(DMA1, LL_DMA_CHANNEL_2, LL_SPI_DMA_GetRegAddr(SPI1), (uint32_t)aRxBuffer,
+  //                        LL_DMA_GetDataTransferDirection(DMA1, LL_DMA_CHANNEL_2));
+  // LL_DMA_SetDataLength(DMA1, LL_DMA_CHANNEL_2, ubNbDataToReceive);
+  // LL_DMA_SetPeriphRequest(DMA1, LL_DMA_CHANNEL_2, LL_DMAMUX_REQ_SPI1_RX);
+
+  // LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_3);
+  // LL_DMA_EnableIT_TE(DMA1, LL_DMA_CHANNEL_3);
+  // LL_DMA_EnableIT_TC(DMA1, LL_DMA_CHANNEL_2);
+  // LL_DMA_EnableIT_TE(DMA1, LL_DMA_CHANNEL_2);
+
+  // /* Initialize FFIFO Threshold */
+  // LL_SPI_SetRxFIFOThreshold(SPI1, LL_SPI_RX_FIFO_TH_QUARTER);
+
+  // /* Configure SPI1 DMA transfer interrupts */
+  // /* Enable DMA RX Interrupt */
+  // LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_2);
+  // LL_DMA_EnableChannel(DMA1, LL_DMA_CHANNEL_3);
+  // LL_SPI_EnableDMAReq_RX(SPI1);
+  // LL_SPI_EnableDMAReq_TX(SPI1);
+  /* Enable the SPI1 peripheral */
+  // LL_DMA_DisableChannel(DMA1,LL_DMA_CHANNEL_2);
+  // LL_DMA_DisableChannel(DMA1,LL_DMA_CHANNEL_3);
+  LL_SPI_Enable(SPI1);
+  
+  // LL_SPI_Enable(SPI1);
 
   FOC_init(FOC_MOTOR); 
   Current_get_init();
@@ -161,28 +207,28 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    
+    // Theta_get(FOC_MOTOR);
     // Svpwm_sensor(1,FOC_MOTOR->theta);
     // Svpwm(FOC_MOTOR,0.5,0,FOC_MOTOR->theta);
     // Svpwm(FOC_MOTOR,2,0,FOC_MOTOR->theta);
     // Svpwm(FOC_MOTOR,1,0,4.71);
     // Pwm_change(DA,DB,DC);
 
-    // Theta_get(FOC_MOTOR);
-    // Current_get(FOC_MOTOR);
-    // Svpwm(FOC_MOTOR,0.2,0,FOC_MOTOR->theta);
-    // Pwm_change(DA,DB,DC);
+    Theta_get(FOC_MOTOR);
+    Current_get(FOC_MOTOR);
+    Svpwm(FOC_MOTOR,1 ,0,FOC_MOTOR->theta);
+    Pwm_change(DA,DB,DC);
 
     // x.x[0]=FOC_MOTOR->voltage_info[0];
     // x.x[1]=FOC_MOTOR->voltage_info[1];
     // x.x[2]=FOC_MOTOR->voltage_info[2];
     // CDC_Transmit_FS(&x, sizeof(x));
-    // USBVcom_printf("%f, %f, %f,%f,%f,%d,%d\r\n", DA, DB, DC,FOC_MOTOR->theta,FOC_MOTOR->machanical_theta,FOC_MOTOR->angle_raw,FOC_MOTOR->foc_sector);
+    // USBVcom_printf("%f, %f, %f\r\n", DA, DB, DC);
 		// USBVcom_printf("%f, %f, %f,%f,%f,%f\r\n", DA, DB, DC,FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
     // USBVcom_printf("%f, %f, %f\r\n", FOC_MOTOR->voltage_info[0], FOC_MOTOR->voltage_info[1], FOC_MOTOR->voltage_info[2]);
     // USBVcom_printf("%d, %d, %d\r\n", ADC_ConvertedValue[0], ADC_ConvertedValue[1], ADC_ConvertedValue[2]);
     // USBVcom_printf("%f, %f\r\n", FOC_MOTOR->current_q, FOC_MOTOR->current_d);
-        
+    // USBVcom_printf("%f, %f, %d\r\n",FOC_MOTOR->theta,FOC_MOTOR->machanical_theta,FOC_MOTOR->angle_raw);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

@@ -1,5 +1,6 @@
 #include "foc.h"
 #include "AS5600.h"
+#include "as5047.h"
 #include "dma.h"
 #include "tim.h"
 
@@ -78,7 +79,9 @@ void Theta_get(MOTOR* motor)
         theta_angle-=360;
     }
 	
-    // theta_angle = 360 - theta_angle;
+    theta_angle = 360 - theta_angle;
+		
+		
     theta = 1.0 * theta_angle*(pi/180.0);
     motor->angle_raw = mechanical_angle;
     motor->theta = theta;
@@ -475,7 +478,7 @@ void Svpwm(MOTOR*motor, float Uq, float Ud, float angle_el)
     // }
     #pragma endregion
 		
-    #pragma region {}
+    #pragma region {正在使用}
     uint8_t section[7] = {0, 2, 6, 1, 4, 3, 5};
     float U1, U2, U3;
     uint8_t a, b, c;

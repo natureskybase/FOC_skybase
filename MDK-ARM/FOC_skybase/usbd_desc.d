@@ -1,18 +1,18 @@
 foc_skybase/usbd_desc.o: ..\USB_Device\App\usbd_desc.c \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Middlewares\ST\STM32_USB_Device_Library\Core\Inc\usbd_core.h \
   ..\USB_Device\Target\usbd_conf.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdio.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdlib.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\string.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal.h \
@@ -20,7 +20,7 @@ foc_skybase/usbd_desc.o: ..\USB_Device\App\usbd_desc.c \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_def.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stddef.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h \

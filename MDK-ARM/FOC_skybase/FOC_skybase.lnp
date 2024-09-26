@@ -6,7 +6,6 @@
 "foc_skybase\adc.o"
 "foc_skybase\dma.o"
 "foc_skybase\fdcan.o"
-"foc_skybase\i2c.o"
 "foc_skybase\lptim.o"
 "foc_skybase\spi.o"
 "foc_skybase\tim.o"
@@ -39,7 +38,6 @@
 "foc_skybase\stm32g4xx_ll_adc.o"
 "foc_skybase\stm32g4xx_ll_dma.o"
 "foc_skybase\stm32g4xx_hal_fdcan.o"
-"foc_skybase\stm32g4xx_ll_i2c.o"
 "foc_skybase\stm32g4xx_ll_lptim.o"
 "foc_skybase\stm32g4xx_ll_spi.o"
 "foc_skybase\stm32g4xx_hal_tim.o"
@@ -53,6 +51,7 @@
 "foc_skybase\as5600.o"
 "foc_skybase\pid.o"
 "foc_skybase\foc.o"
+"foc_skybase\as5047.o"
 --strict --scatter "FOC_skybase\FOC_skybase.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

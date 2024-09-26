@@ -6,16 +6,16 @@ foc_skybase/foc.o: ..\Code\Src\foc.c ..\Code\Inc\foc.h ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g4xx.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\stm32g431xx.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\core_cm4.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stdint.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_version.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_compiler.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\cmsis_armclang.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Include\mpu_armv7.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\CMSIS\Device\ST\STM32G4xx\Include\system_stm32g4xx.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\stddef.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_rcc_ex.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_hal_gpio_ex.h \
@@ -35,7 +35,6 @@ foc_skybase/foc.o: ..\Code\Src\foc.c ..\Code\Inc\foc.h ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_adc.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dma.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_dmamux.h \
-  C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_i2c.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_lptim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_rcc.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_bus.h \
@@ -48,7 +47,8 @@ foc_skybase/foc.o: ..\Code\Src\foc.c ..\Code\Inc\foc.h ..\Core\Inc\main.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_spi.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_tim.h \
   C:\Users\10548\STM32Cube\Repository\STM32Cube_FW_G4_V1.5.1\Drivers\STM32G4xx_HAL_Driver\Inc\stm32g4xx_ll_gpio.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
-  D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h ..\Code\Inc\pid.h \
-  ..\Code\Inc\AS5600.h ..\Core\Inc\gpio.h ..\Core\Inc\dma.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\math.h \
+  C:\Program\ Files\Keil_v5\ARM\ARMCLANG\include\string.h \
+  ..\Code\Inc\pid.h ..\Code\Inc\AS5600.h ..\Core\Inc\gpio.h \
+  ..\Code\Inc\as5047.h ..\Core\Inc\spi.h ..\Core\Inc\dma.h \
   ..\Core\Inc\tim.h
