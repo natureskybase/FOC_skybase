@@ -125,7 +125,11 @@ int main(void)
   LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);
 
 	// ADC_DMA_Start();
+<<<<<<< HEAD
   LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�??????????
+=======
+  LL_DMA_ConfigAddresses(DMA1,LL_DMA_CHANNEL_1,LL_ADC_DMA_GetRegAddr(ADC1, LL_ADC_DMA_REG_REGULAR_DATA),(uint32_t)ADC_ConvertedValue,LL_DMA_DIRECTION_PERIPH_TO_MEMORY);//配置DMA,将DMA与ADC1链接到一�????
+>>>>>>> origin/V2.0
 	LL_DMA_SetDataLength(DMA1,LL_DMA_CHANNEL_1,12);
   LL_DMA_EnableChannel(DMA1,LL_DMA_CHANNEL_1);
 	LL_ADC_REG_SetDMATransfer(ADC1,LL_ADC_REG_DMA_TRANSFER_UNLIMITED);

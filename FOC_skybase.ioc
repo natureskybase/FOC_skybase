@@ -292,9 +292,14 @@ SH.S_TIM1_CH3.0=TIM1_CH3,PWM Generation3 CH3 CH3N
 SH.S_TIM1_CH3.ConfNb=1
 SH.S_TIM8_CH1.0=TIM8_CH1,PWM Generation1 CH1
 SH.S_TIM8_CH1.ConfNb=1
+<<<<<<< HEAD
 SPI1.BaudRatePrescaler=SPI_BAUDRATEPRESCALER_32
 SPI1.CalculateBaudRate=5.3125 MBits/s
 SPI1.DataSize=SPI_DATASIZE_16BIT
+=======
+SPI1.BaudRatePrescaler=SPI_BAUDRATEPRESCALER_16
+SPI1.CalculateBaudRate=10.625 MBits/s
+>>>>>>> origin/V2.0
 SPI1.Direction=SPI_DIRECTION_2LINES
 SPI1.IPParameters=VirtualType,Mode,Direction,BaudRatePrescaler,CalculateBaudRate,DataSize
 SPI1.Mode=SPI_MODE_MASTER
